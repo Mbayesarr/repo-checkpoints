@@ -1,0 +1,22 @@
+Var
+    s, s1: string;
+    cons, voy, blanc, i: entier;
+ 
+Debut
+ 
+    s1 := "aeiouy";
+    cons := 0;
+    voy := 0;
+    blanc := 0;
+ 
+    Pour i := 1 à length(s) Faire
+        Si(pos(s[i], s) <> 0) Alors
+            voy := voy + 1;
+        Sinon Si(s[i] == '_') Alors
+            blanc := blanc + 1;
+        Sinon
+            cons := cons + 1;
+        FinSi
+    FinPour
+ 
+Fin.
